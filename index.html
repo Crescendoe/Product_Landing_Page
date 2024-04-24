@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="page-wrapper">
+        <div id="background-overlay">           
+        </div>
+        <header id="header">
+            <div class="logo">
+                <img src="content\Will-O-Wicks Title.png" alt="logo" id="header-img">
+            </div>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#fragrances">Fragrances</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container"></div>
+        <main>
+            <section id="about">
+                <h2>Hand-crafted candles for your next adventure</h2>
+                <div class="about-row">
+                    <div class="about-column">
+                        <div class="video-container">
+                            <video id="video" controls>
+                                <source id="about-video" src="content\Video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="about-column">
+                        <p id="about-text">Will-O-Wicks is a small candle business that takes pride in creating a story with our candles.</p>
+                        <p id="about-text">Candles are hand-poured with soy wax and are inspired by the many exciting adventures that YOU create.</p>
+                        <ul class="about-list">
+                            <li>100% soy wax</li>
+                            <li>Hand-poured</li>
+                            <li>Phthalate-free</li>
+                            <li>Lead-free</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>  
+            <section id="fragrances">
+                <h2>Fragrances</h2>
+                <div class="fragrance-row">
+                    <div class="fragrance-column">
+                        <img src="content\nw-0506jpg.jpg" alt="Adventure" class="fragrance-image">
+                        <h3>Adventure</h3>
+                        <p class="fragrance-text">Adventure is a blend of sandalwood, cedar, and vanilla. It is perfect for those who love the great outdoors.</p>
+                    </div>
+                    <div class="fragrance-column">
+                        <img src="content\nw-0506jpg.jpg" alt="Wanderlust" class="fragrance-image">
+                        <h3>Wanderlust</h3>
+                        <p class="fragrance-text">Wanderlust is a blend of lavender, rosemary, and mint. It is perfect for those who love to travel.</p>
+                    </div>
+                    <div class="fragrance-column">
+                        <img src="content\nw-0506jpg.jpg" alt="Enchanted" class="fragrance-image">
+                        <h3>Enchanted</h3>
+                        <p class="fragrance-text">Enchanted is a blend of jasmine, rose, and sandalwood. It is perfect for those who love fairy tales.</p>
+                    </div>
+            </section>   
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <label for="email">Enter your email address to receive updates on our latest fragrances:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    <input type="submit" id="submit" value="Submit">
+                </form>
+            </section>       
+        </main>
+        <footer>
+            <p>&copy; 2024, Will-O-Wicks</p>
+        </footer>
+    </div>
+</body>
+</html>
