@@ -1,6 +1,4 @@
-This is a sample product landing page created for your friend who is looking to start a candle 
-
-business called Will-O-Wicks. The purpose of this page is to generate interest in their upcoming product launch and collect email addresses from potential customers.
+This is a sample product landing page created for a friend who is looking to start a candle business called Will-O-Wicks. The purpose of this page is to generate interest in their upcoming product launch and collect email addresses from potential customers.
 
 Here's a breakdown of the key features:
 
