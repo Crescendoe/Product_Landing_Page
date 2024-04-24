@@ -44,6 +44,7 @@
                             <li>Phthalate-free</li>
                             <li>Lead-free</li>
                         </ul>
+                        <p id="about-text">We hope you enjoy our candles as much as we enjoy making them!</p>
                     </div>
                 </div>
             </section>  
@@ -53,30 +54,60 @@
                     <div class="fragrance-column">
                         <img src="content\nw-0506jpg.jpg" alt="Adventure" class="fragrance-image">
                         <h3>Adventure</h3>
-                        <p class="fragrance-text">Adventure is a blend of sandalwood, cedar, and vanilla. It is perfect for those who love the great outdoors.</p>
+                        <p class="fragrance-text">Adventure is a blend of sandalwood, cedar, and vanilla. Perfect for those who love the great outdoors.</p>
                     </div>
                     <div class="fragrance-column">
                         <img src="content\nw-0506jpg.jpg" alt="Wanderlust" class="fragrance-image">
                         <h3>Wanderlust</h3>
-                        <p class="fragrance-text">Wanderlust is a blend of lavender, rosemary, and mint. It is perfect for those who love to travel.</p>
+                        <p class="fragrance-text">Wanderlust is a blend of lavender, rosemary, and mint. For those who love to travel.</p>
                     </div>
                     <div class="fragrance-column">
                         <img src="content\nw-0506jpg.jpg" alt="Enchanted" class="fragrance-image">
                         <h3>Enchanted</h3>
-                        <p class="fragrance-text">Enchanted is a blend of jasmine, rose, and sandalwood. It is perfect for those who love fairy tales.</p>
+                        <p class="fragrance-text">Enchanted is a blend of jasmine, rose, and sandalwood. Great for anyone who wants a bit of whismy in their day.</p>
                     </div>
+                    <div class="fragrance-column">
+                        <img src="content\nw-0506jpg.jpg" alt="Cozy" class="fragrance-image">
+                        <h3>Cozy</h3>
+                        <p class="fragrance-text">Cozy is a blend of vanilla, cinnamon, and clove. Perfect for those who love to snuggle up with a good book.</p>
+                </div>
             </section>   
+            <section id="email">
+                <h2 id="email-title">Sign up for our email list!</h2>
+                <form id="form" action="https://www.example.com/submit_form" method="post" target="_blank" onsubmit="event.preventDefault(); thankUser();">
+                    <label id="input-label" for="email-input">Enter your email address to receive updates on our latest fragrances:</label>
+                    <input type="email" id="email-input" name="email" placeholder="example@gmail.com" required>
+                    <input type="submit" id="submit" value="Submit">
+                    <p id="thankyou" style="display: none;">** Thank you for signing up! **</p>
+                </form>
+                <script>
+                    function thankUser() {
+                        document.getElementById('email-title').style.display = 'none';
+                        document.getElementById('submit').style.display = 'none';
+                        document.getElementById('input-label').style.display = 'none';
+                        document.getElementById('email-input').style.display = 'none';
+                        document.getElementById('thankyou').style.display = 'block';
+                    }
+
+                    window.onload = function() {
+                        document.getElementById('email-input').value = '';
+                    }
+                </script>
+            </section> 
             <section id="contact">
                 <h2>Contact Us</h2>
-                <form id="form" action="https://www.freecodecamp.com/email-submit">
-                    <label for="email">Enter your email address to receive updates on our latest fragrances:</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                    <input type="submit" id="submit" value="Submit">
-                </form>
-            </section>       
+                <p id="contact-sub">We'd love to hear from you! Please reach out to us with any questions or comments you may have.</p>
+                <p><b>Email:</b> info@willowicks.com</p>
+                <p><b>Phone:</b> (123) 456-7890</p>
+                <p><b>Address:</b> 123 Candle Lane, Wax City, 12345</p>
+            </section>
         </main>
         <footer>
             <p>&copy; 2024, Will-O-Wicks</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank" id="instagram"><img src="content\instagram.256x256.png" class="icon" alt="Instagram"></a>
+                <a href="https://www.tiktok.com" target="_blank" id="tiktok"><img src="content\tiktok.223x256.png" class="icon" alt="TikTok"></a>
+            </div>
         </footer>
     </div>
 </body>

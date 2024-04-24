@@ -53,10 +53,18 @@ nav {
     list-style: none;
     flex-direction: row;
     text-decoration: none;
+    padding-left: 150px
 }
 
 #nav-bar > li {
     list-style: none;
+}
+
+.nav-link:hover {
+    background-color: #1c1917;
+    color: #eee4db;
+    border-radius: 10px;
+    padding: 8px;
 }
 
 a {
@@ -85,7 +93,7 @@ section {
 }
 
 #about {
-    padding: 85px 0 50px 0;
+    padding: 85px 0 20px 0;
     text-align: center;
 }
 
@@ -101,14 +109,14 @@ section {
     text-align: left;
     max-width: 500px;
     font-size: 1.3em;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .about-list {
     text-align: left;
     max-width: 500px;
-    font-size: 1.3em;
-    padding-top: 10px;
+    font-size: 1.5em;
+    padding: 20px 0 0 20px;
 }
 
 h2 {
@@ -122,9 +130,10 @@ h2 {
     position: relative; 
     overflow: hidden; 
     width: 250px; 
-    height: 445px; 
-    border-radius: 20px;
-    padding: 0 0 20px 0;
+    height: 440px; 
+    border: 3px solid #1c1917;
+    border-radius: 30px;
+    padding: 0 0 20px 20px;
     margin: 0 auto;
 }
   
@@ -152,30 +161,162 @@ video {
 
 .fragrance-column {
     text-align: center;
+    padding: 10px;
 }
 
 .fragrance-image {
     width: 50%;
-    height: 50%;
-    display: relative;
-    justify-content: center;
-    align-items: left;
-    text-align: center;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid #1c1917;
     border-radius: 20px;
+    object-fit: cover;
+}
+.fragrance-image:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
 }
 
 .fragrance-text {
     text-align: left;
     max-width: 500px;
     font-size: 1.3em;
-    padding-top: 10px;
+}
+
+h3 {
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    border-radius: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #1c1917;
+    border-radius: 5px;
+}
+
+#submit {
+    width: 30%;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid #1c1917;
+    border-radius: 5px;
+    background-color: #1c1917;
+    color: #eee4db;
+    font-size: 1.1em;
+    display: block;
+}
+
+#thankyou {
+    text-align: center;
+    padding: 20px;
+    color: #1c1917;
+    font-size: 2em;
+    animation: celebration 2s forwards;
+}
+
+@keyframes celebration {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.2); color: #1c1917 }
+}
+
+#contact {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#contact-sub {
+    text-align: center;
+    padding: 5px;
+    color: #1c1917;
+    font-size: 1.1em;
 }
 
 footer > p {
-    text-align: right;
-    padding:  10px 30px 10px 0; 
+    text-align: center;
+    padding: 5px 0 0 0;
     margin: 0;   
-    background-color: #1c1917;
+    color: #1c1917;
+}
+
+footer {
+    background-color: #eee4db;
     color: #eee4db;
+    text-align: center;
+    padding: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    border-top: 4px solid #1c1917;
+}
+
+.icon {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    margin: 0 2px;
+}
+
+/* Media */
+@media (max-width: 768px) {
+    .about-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-text {
+        text-align: center;
+        max-width: 500px;
+        font-size: 1.3em;
+        padding: 20px 0 0 20px;
+        margin-left: 20px;
+    }
+
+    .about-list {
+        text-align: left;
+        max-width: 500px;
+        font-size: 1.5em;
+        padding: 20px 0 0 100px;
+    }
+
+    .fragrance-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fragrance-column {
+        text-align: center;
+    }
+
+    .fragrance-image {
+        width: 80%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #1c1917;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        padding-top: 20px;
+    }
+
+    .fragrance-text {
+        text-align: center;
+        max-width: 500px;
+        font-size: 1.3em;
+    }
 }
