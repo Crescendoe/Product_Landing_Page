@@ -81,7 +81,7 @@ section {
     max-width: 750px;
     margin: 0 auto;
     background-color: #d3c0a9;
-    padding : 10px;
+    padding : 5px;
 }
 
 #about {
@@ -113,7 +113,7 @@ section {
 
 h2 {
     text-align: center;
-    margin-bottom: 20px;  
+    margin-bottom: 15px;  
     font-size: 2em;
     border: 1px solid #d3c0a9;
 }
